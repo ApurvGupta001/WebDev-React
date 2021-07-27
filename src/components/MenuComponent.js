@@ -13,7 +13,6 @@ class Menu extends Component {
 
   onDishSelect(dish) {
     this.setState({ selectedDish: dish });
-    console.log("Click");
   }
   renderSelDish(dish) {
     if (dish != null) return <DishdetailComponent dish={dish} />;
@@ -35,7 +34,7 @@ class Menu extends Component {
     return (
       <div className="container">
         <div className="row">{menu}</div>
-        {this.renderSelDish(this.props.selectedDish)}
+        {this.renderSelDish(this.state.selectedDish)}
       </div>
     );
   }

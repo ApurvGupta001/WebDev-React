@@ -15,20 +15,26 @@ class DishdetailComponent extends Component {
     } else return <div />;
   }
   render() {
+    console.log(this.props);
     return (
       <div className="row">
+        {this.props.image}
         <div className="col-12 col-md-5 m-1">
           <Card>
-            <CardImg top src={this.props.image} alt={this.props.name} />
+            <CardImg
+              top
+              src={this.props.dish.image}
+              alt={this.props.dish.name}
+            />
             <CardBody>
-              <CardTitle>{this.props.name}</CardTitle>
-              <CardText>{this.props.description}</CardText>
+              <CardTitle>{this.props.dish.name}</CardTitle>
+              <CardText>{this.props.dish.description}</CardText>
             </CardBody>
           </Card>
         </div>
         <div className="col-12 col-md-5 m-1">
           <h4>Comments</h4>
-          {this.renderComments(this.props.comments)}
+          {this.renderComments(this.props.dish.comments)}
         </div>
       </div>
     );

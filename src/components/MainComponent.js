@@ -29,7 +29,7 @@ class Main extends Component {
           onClick={(dishId) => this.onDishSelect(dishId)}
         />
         <div className="container">
-          {this.state.selectedDish && (
+          {this.state.selectedDish != null && (
             <Dishdetail
               dish={
                 this.state.dishes.filter(

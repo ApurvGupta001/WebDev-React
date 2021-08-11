@@ -21,13 +21,21 @@
   background: #9575cd;
   color: floralwhite;
 }
-
+.autho {
+  font-weight: 450;
+}
+.my_image {
+  height: 100px;
+  width: 100px;
+}
 address {
   font-size: 80%;
   margin: 0px;
   color: #0f0f0f;
 }
-
 .navbar-dark {
   background-color: #512da8;
+}
+.marginn {
+  margin-left: 50px;
 }

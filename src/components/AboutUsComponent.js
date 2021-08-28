@@ -17,6 +17,7 @@ function AboutUs(props) {
           object
           left
           src={leader.image}
+          
           alt={leader.name}
           className="my_image"
         />
